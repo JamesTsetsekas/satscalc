@@ -374,3 +374,94 @@
     });
   });
 </script>
+<div class="converter-wrapper">
+  <div id="bts-conv">
+    <div class="input-wrapper">
+      <label class="input-label">
+        <span>Currency</span>
+        <span>Amount</span>
+      </label>
+      <div class="input-inner">
+        <div class="currency-meta-info">
+          <img src="/satscalc/assets/img/satoshi-icon-small.svg" role="presentation" class="currency-logo">
+          <div>
+            <p class="currency-name-long">Satoshis</p>
+            <p class="currency-name-short">SATS</p>
+          </div>
+        </div>
+        <input type="text" placeholder="0" id="btu-bts">
+      </div>
+    </div>
+    <div class="input-wrapper" id="usd-wrapper">
+      <label class="input-label">
+        <span>Currency</span>
+        <span>Amount</span>
+      </label>
+      <div class="input-inner">
+        <div class="currency-meta-info">
+          <img src="/satscalc/assets/img/usd-icon-small.svg" role="presentation" class="currency-logo">
+          <div>
+            <p class="currency-name-long">US Dollar</p>
+            <p class="currency-name-short">USD</p>
+          </div>
+        </div>
+        <input type="text" id="btus-stus" placeholder="0">
+      </div>
+    </div>
+    <div class="input-wrapper" id="eur-wrapper" style="display: none;">
+      <label class="input-label">
+        <span>Currency</span>
+        <span>Amount</span>
+      </label>
+      <div class="input-inner">
+        <div class="currency-meta-info">
+          <img src="/satscalc/assets/img/eur-icon-small.svg" role="presentation" class="currency-logo">
+          <div>
+            <p class="currency-name-long">Euro</p>
+            <p class="currency-name-short">EUR</p>
+          </div>
+        </div>
+        <input type="text" id="bteu-stus" placeholder="0">
+      </div>
+    </div>
+    <div class="input-wrapper" id="gbp-wrapper" style="display: none;">
+      <label class="input-label">
+        <span>Currency</span>
+        <span>Amount</span>
+      </label>
+      <div class="input-inner">
+        <div class="currency-meta-info">
+          <img src="/satscalc/assets/img/gbp-icon-small.svg" role="presentation" class="currency-logo">
+          <div>
+            <p class="currency-name-long">British Pound</p>
+            <p class="currency-name-short">GBP</p>
+          </div>
+        </div>
+        <input type="text" id="btgb-stus" placeholder="0">
+      </div>
+    </div>
+    <div class="input-wrapper">
+      <label class="input-label">
+        <span>Currency</span>
+        <span>Amount</span>
+      </label>
+      <div class="input-inner">
+        <div class="currency-meta-info">
+          <img src="/satscalc/assets/img/bitcoin-icon-small.svg" role="presentation" class="currency-logo">
+          <div>
+            <p class="currency-name-long">Bitcoin</p>
+            <p class="currency-name-short">BTC</p>
+          </div>
+        </div>
+        <input type="text" id="btc-field" placeholder="0">
+      </div>
+    </div>
+  </div>
+  <div>
+    <h1>Bitcoin Price</h1>
+    <div id="price"></div>
+    <button id="usd-btn">USD</button>
+    <button id="eur-btn">EUR</button>
+    <button id="gbp-btn">GBP</button>
+  </div>
+</div>
